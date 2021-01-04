@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link id="theme" rel="stylesheet" type="text/css" href="/other/General%20Theme.css" />
-        <style></style>
+        <style>
+            .carousel-inner img {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
     </head>
-    
+
     <body>
         <ul class="navigation">
             <li><a class="active" href="Homepage.html">Homepage</a></li>
@@ -40,26 +45,79 @@
             <li class="theme-switch">
                 <div id="switch-container">
                     <label class="switch">
-                      <input type="checkbox" id="theme-toggle">
-                      <span class="slider round"></span>
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider round"></span>
                     </label>
                     <p id="tdt">Toogle <br>Dark Theme</p>
                 </div>
             </li>
         </ul>
-        
-        
-        
-        
+
+        <div class="container">
+            <h2>Carousel Options</h2>
+            <p>The <strong>data-interval</strong> attribute specifies the delay (in milliseconds) between each slide.</p>
+            <p>In this example, we have set the interval to "500" (default is 5000).</p>
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/images/Utility/Homepage.jpg" alt="The Artist" height="500">
+                        <div class="carousel-caption">
+                            <h3><span>The Artist</span></h3>
+                            <p><span><a href="/html/Biography.html">Biography</a> and details about his life</span></p>
+                        </div>   
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/TattooPictures/ArmHandTattoos/arm-Iluminati-AceOfSpades%20tattoo.jpg" alt="Chicago" height="500">
+                        <div class="carousel-caption">
+                            <h3><span>His Work</span></h3>
+                            <p><span>Check out <a href="/html/TattooWork.html">more Personal Work</a> for the complete Gallery</span></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/TattooPictures/ArmHandTattoos/hand%20rose%20tattoo.jpg" alt="New York" height="500">
+                        <div class="carousel-caption">
+                            <h3><span>His Work</span></h3>
+                            <p><span>Check out <a href="/html/TattooWork.html">Biography</a> and details about his life</span></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/TattooPictures/Wannados/Wannado15.jpg" alt="New York" height="500">
+                        <div class="carousel-caption">
+                            <h3><span>Concept Art</span></h3>
+                            <p><span><a href="/html/Wannado's.html">Wannado's and Projects</a> that the artist wants to work on</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+
         <div class="footer">
             <p>Created by the <a href="/html/4StoogesTeam.html">4 Stooges Team</a>, 2020.</p>
         </div>
-        
+
         <script type="text/javascript" src="/other/General%20Scripts.js"></script>
         <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
-    
+
 </html>

@@ -3,61 +3,156 @@
 
     <head>
         <title>HTML 4 Stooges Team</title>
-        <link rel="stylesheet" type="text/css" href="/other/General%20Theme.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
-            body{
-                color:black;
-                text-align:center;
-                margin:auto;                
+            /*body{
+            color:black;
+            text-align:center;
+            margin:auto;                
             }
             h1{
-                font-family:cursive; 
+            font-family:cursive; 
 
             }
             h3{
-                margin-right:500px;
+            margin-right:500px;
             }
             p{
-                font-family:monospace;
-                font-size:18px;
+            font-family:monospace;
+            font-size:18px;
             }
             .content{
-                width:700px;
-                margin:auto;
-                margin-bottom:80px;
-                margin-top:15px;
-                background:darkgray;
-                border:px ridge darkgray;
-                padding:15px;
+            width:700px;
+            margin:auto;
+            margin-bottom:80px;
+            margin-top:15px;
+            background:darkgray;
+            border:px ridge darkgray;
+            padding:15px;
+            }*/
+            html {
+                box-sizing: border-box;
             }
 
+            *, *:before, *:after {
+                box-sizing: inherit;
+            }
+
+            .column {
+                float: left;
+                width: 33.3%;
+                margin-bottom: 16px;
+                padding: 0 8px;
+            }
+
+            @media screen and (max-width: 650px) {
+                .column {
+                    width: 100%;
+                    display: block;
+                }
+            }
+
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            }
+
+            .container {
+                padding: 0 16px;
+            }
+
+            .container::after, .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            .title {
+                color: grey;
+            }
+
+            .button {
+                border: none;
+                outline: 0;
+                display: inline-block;
+                padding: 8px;
+                color: white;
+                background-color: #000;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+            }
+
+            .button:hover {
+                background-color: #555;
+            }
         </style>
     </head>
 
     <body>
-        <div class="navigation">
-            <a href="Homepage.html">Homepage</a>
-            <a href="/html/Portfolio.html">Portfolio</a>
-            <a href="/html/History%20of%20Tattoos.html">History of Tattoos</a>
-            <a class="active" href="/html/Tattoo%20News.html">Tattoo News</a>
-            <a href="/html/Merchandise.html">Merchandise</a>
-            <a href="/html/Book%20an%20Appointment.html">Book an Appointment</a>
+
+        <div class="container">
+            <h2>Meet The 4 Stooges Team</h2>
+            <p>Here you can take a look at the team that created the website. Click on the button under each student to see their personal details, interests in CS, hobbies and interests in general!</p>
+            <br>
+
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <img src="/images/Team/Hannah.png" alt="Hannah" style="width:100%">
+                        <div class="container">
+                            <h2>Hannah</h2>
+                            <p class="title">Developer</p>
+                            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                            <p>example@example.com</p>
+                            <p><button class="button">Contact</button></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <img src="/images/Team/Konstantina.png" alt="Konstantina" style="width:100%">
+                        <div class="container">
+                            <h2>Konstantina</h2>
+                            <p class="title">Developer</p>
+                            <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                            <p>example@example.com</p>
+                            <p><button class="button">Contact</button></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <img src="/images/Team/Nasos.png" alt="Nasos" style="width:100%">
+                        <div class="container">
+                            <h2>Nasos</h2>
+                            <p class="title">Team Leader</p>
+                            <p>Best Team Leader (according to my grandma).</p>
+                            <p>apapageorgiou@citycollege.sheffield.eu</p>
+                            <p><button class="button">Contact</button></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
 
         <div class="footer">
-            <p>Created by the<a href="/html/4StoogesTeam.html">4 Stooges Team</a>, 2020.</p>
+            <p>Created by the <a href="/html/4StoogesTeam.html">4 Stooges Team</a>, 2020.</p>
         </div>
-        <div class="content">
+        <!--<div class="content">
 
-            <h1>Under Construction</h1>
 
-            <h3>Konstantina Efstathiou</h3>
 
-            <p>
-                Hello fellow tattoo enthusiast,my name is <strong>Konstantina</strong>  and I am a <br>student at City College Bcs (Hons) Computer Science program. <br>This Webpage was a Project that my co-students and Ι had to <br> built from scratch. My role in this was to create the <em> Tattoo News </em> part. I hope you like it.
+<h3>Konstantina Efstathiou</h3>
 
-            </p>
-        </div>
+<p>
+Hello fellow tattoo enthusiast,my name is <strong>Konstantina</strong>  and I am a <br>student at City College Bcs (Hons) Computer Science program. <br>This Webpage was a Project that my co-students and Ι had to <br> built from scratch. My role in this was to create the <em> Tattoo News </em> part. I hope you like it.
+
+</p>
+</div>-->
     </body>
 
 </html>
