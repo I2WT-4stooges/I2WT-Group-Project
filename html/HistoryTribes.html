@@ -1,12 +1,11 @@
-<!doctype html>
-<By: Hanna Stridsberg>
-<html lang="en">
-    <head>
+<!DOCTYPE html>
+<html>
 
+    <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link id="theme" rel="stylesheet" type="text/css" href="/other/General%20Theme.css">
+        <link rel="stylesheet" type="text/css" href="General%20Theme.css">
 
         <style>   
             #uparrow{
@@ -32,14 +31,21 @@
             }
 
             a {
-
-                color: white;
                 padding: 5px;
                 text-decoration: none;
                 font-size: 20px;
                 color: blueviolet;
 
+
             }
+            a:hover, a:active, a:focus{
+
+                color: orange;
+                background-color: rgb(235,228,235); 
+                padding:2px;
+
+            }
+            
             h1, h2, p{
                 padding-left: 50px;
                 padding-right: 180px
@@ -86,16 +92,16 @@
                 height: 600px;
                 width: 500px;
                 background-size: cover;
-                
+
             }
             .carousel-inner{
                 overflow-y: hidden;
                 overflow-x: hidden;
-                
-                
+
+
             }
-            
-            
+
+
             #whang-od{
                 display: block;
                 margin-left: auto;
@@ -110,77 +116,56 @@
     </head>
 
     <body>
-        <ul class="navigation">
-            <li><a href="Homepage.html">Homepage</a></li>
-            <li class="dropdown-nav">
-                <a class=" dropbtn" href="/html/Portfolio.html" >Portfolio</a>
-                <div class="dropdown-content">
-                    <a href="/html/Biography.html">Biography</a>
-                    <a href="/html/TattooWork.html">Tattoo Work</a>
-                    <a href="/html/Wannado's.html">Wannado's</a>
-                </div>
-            </li>
-            <li class="dropdown-nav">
-                <a class="active dropbtn" href="/html/History%20of%20Tattoos.html">History of Tattoos</a>
-                <div class="dropdown-content">
-                    <a href="/html/HistoryAncientTattoos.html">Ancient Tattoos</a>
-                    <a href="/html/HistoryTools.html">Tools</a>
-                    <a class="active" href="/html/HistoryTribes.html">Tribes</a>
-                    <a href="/html/HistoryModern.html">Modern</a>
-                    <a href="/html/HistoryMilitaryWiccanReligion.html">Military/Wiccan/Religion</a>
-                    <a href="/html/HistoryReferenceList.html">Reference List</a>
-                </div>
-            </li>
-            <li><a href="/html/Tattoo%20News.html">Tattoo News</a></li>
-            <li><a href="/html/Merchandise.html">Merchandise</a></li>
-            <li><a href="/html/Book%20an%20Appointment.html">Book an Appointment</a></li>
-            <li class="translate">
-                <div id="google_translate_element"></div>
-            </li>
-            <li class="theme-switch">
-                <label class="switch">
-                  <input type="checkbox" id="theme-toggle">
-                  <span class="slider round"></span>
-                </label>
-                <p id="tdt">Toogle <br>Dark Theme</p>
-            </li>
-            
-        </ul>
-        
+        <div class="navigation">
+            <a href="Homepage.html">Homepage</a>
+            <a href="Portfolio.html">Portfolio</a>
+            <a class="active" href="History%20of%20Tattoos.html">History of Tattoos</a>
+            <ul>
+                <a href="HistoryAncientTattoos.html"></a>
+                <a href="HistoryTools.html"></a>
+                <a href="HistoryTribes.html"></a>
+                <a href="HistoryModern.html"></a>
+                <a href="HistoryMilitaryWiccanReligion.html"></a>
+                <a href="HistoryReferenceList.html"></a>
+            </ul>
+            <a href="Tattoo%20News.html">Tattoo News</a>
+            <a href="Merchandise.html">Merchandise</a>
+            <a href="Book%20an%20Appointment.html">Book an Appointment</a>
+        </div>
         <div class="background">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
                 <div class="carousel-inner" style="background-color: black">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="/images/HTML-pictures.html/maorifacetattoo.jpg" alt="girl with maori face tattoo">
+                        <img class="d-block w-100" src="HTML-pictures.html/maorifacetattoo.jpg" alt="girl with maori face tattoo">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="/images/HTML-pictures.html/facetattoo.jpg" alt="woman with maori face tattoo">
+                        <img class="d-block w-100" src="HTML-pictures.html/facetattoo.jpg" alt="woman with maori face tattoo">
 
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="/images/HTML-pictures.html/tribetattooman.jpg" alt="man with traditional  tattoos">
+                        <img class="d-block w-100" src="HTML-pictures.html/tribetattooman.jpg" alt="man with traditional  tattoos">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="/images/HTML-pictures.html/tribe2.jpg" alt=" girl with tattoo of australia on her shoulder">
+                        <img class="d-block w-100" src="HTML-pictures.html/tribe2.jpg" alt=" girl with tattoo of australia on her shoulder">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="/images/HTML-pictures.html/tribe4.jpg" alt=" guy with traditional tattoos">
+                        <img class="d-block w-100" src="HTML-pictures.html/tribe4.jpg" alt=" guy with traditional tattoos">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="/images/HTML-pictures.html/tribepaintedones2.jpg" alt="">
+                        <img class="d-block w-100" src="HTML-pictures.html/tribepaintedones2.jpg" alt="">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="/images/HTML-pictures.html/henna.jpg" alt="lady with henna tattoos on her hands and arms">
+                        <img class="d-block w-100" src="HTML-pictures.html/henna.jpg" alt="lady with henna tattoos on her hands and arms">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="/images/HTML-pictures.html/henna2.jpg" alt="lady with henna tattoos on her hands and arms">
+                        <img class="d-block w-100" src="HTML-pictures.html/henna2.jpg" alt="lady with henna tattoos on her hands and arms">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="/images/HTML-pictures.html/mexican%20style.jpg" alt="mexican style tattoo">
+                        <img class="d-block w-100" src="HTML-pictures.html/mexican%20style.jpg" alt="mexican style tattoo">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="/images/HTML-pictures.html/monk.jpg" alt="monk with back tattoo">
+                        <img class="d-block w-100" src="HTML-pictures.html/monk.jpg" alt="monk with back tattoo">
                     </div>
 
 
@@ -207,7 +192,7 @@
 
                 <p>In 1521 Spanish invaders visited the Philippines they started to call the locals “Pintados” which means, the painted ones due to the sailors mistaking the many tattoos on their bodies for paint. The women wore tattoos of adulthood and the men of accomplishments on the battle field. Their traditional way of tattooing is almost extinct it only remains in very remote locatios.</p>
 
-                <img id="whang-od" src="/images/HTML-pictures.html/Whang-od.jpg">
+                <img id="whang-od" src="HTML-pictures.html/Whang-od.jpg" style="float: left">
 
                 <p>Whang-od Oggay also called Maria Oggay, is the oldest now living tattoo artist from the Philippines. She turned 103 years in feb. 19, 2020. She has been tattoing for more than 90 years now, she uses her hand to hammer a pomelo thorne into the skin and shape it as the customers want.</p>
 
@@ -243,25 +228,24 @@
 
                 <h2>Papa Nya Guinea</h2>
 
-                <div style="float: left"><img src="/images/HTML-pictures.html/crocodileman.jpg" style="float: right" width="250"><p>There are roughly around 850 different tribes with as many different languages in Papa New Guinea. One of those is the Sepiktribe, this tribe is famous for their mystical rituals and worship of the crocodiles. One of the rituals are the transition from boy to man using scarification. During many sessions and different stages in life the Shaman or medicine man slowly transform the body of the men to resemble the crocodile’s scales. This is a way to show other tribes the origin and strength of the man.<br>[20] </p></div>
+                <div style="float: left"><img src="HTML-pictures.html/crocodileman.jpg" style="float: right" width="250"><p>There are roughly around 850 different tribes with as many different languages in Papa New Guinea. One of those is the Sepiktribe, this tribe is famous for their mystical rituals and worship of the crocodiles. One of the rituals are the transition from boy to man using scarification. During many sessions and different stages in life the Shaman or medicine man slowly transform the body of the men to resemble the crocodile’s scales. This is a way to show other tribes the origin and strength of the man.<br>[20] </p></div>
 
                 <br><br><br>
-                <p><a href="/html/HistoryReferenceList.html">References</a></p>
+                <p><a href="HistoryReferenceList.html">References</a></p>
                 <br><br><br>
             </div>
         </div>
 
         <div id="uparrow">
             <a href="#top">
-                <img src="/images/HTML-pictures.html/arrow.png">
+                <img src="HTML-pictures.html/arrow.png">
             </a>
         </div>
 
         <div class="footer">
-            <p>Created by the <a href="/html/4StoogesTeam.html">4 Stooges Team</a>, 2020.</p>
+            <p>Created by the <a href="4StoogesTeam.html">4 Stooges Team</a>, 2020.</p>
         </div>
-        <script type="text/javascript" src="/other/General%20Scripts.js"></script>
-        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
