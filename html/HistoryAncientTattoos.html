@@ -1,8 +1,13 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<By: Hanna Stridsberg>
+<html lang="en">
     <head>
-        <link rel="stylesheet" type="text/css" href="General%20Theme.css">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link id="theme" rel="stylesheet" type="text/css" href="/other/General%20Theme.css">
+
         <title> History Of Ancient Tattoos </title>
         <style>   
             #uparrow{
@@ -27,8 +32,9 @@
                 font-weight: bold;
             }
 
-            a {
+             a {
 
+                color: white;
                 padding: 5px;
                 text-decoration: none;
                 font-size: 20px;
@@ -41,6 +47,9 @@
                 background-color: rgb(235,228,235); 
                 padding:2px;
 
+            }
+            a:visited {
+                color: darkgray;
             }
 
             h1, h2, p{
@@ -135,22 +144,42 @@
     </head>
 
     <body>
-        <div class="navigation">
-            <a href="Homepage.html">Homepage</a>
-            <a href="Portfolio.html">Portfolio</a>
-            <a class="active" href="History%20of%20Tattoos.html">History of Tattoos</a>
-            <ul>
-                <a href="HistoryAncientTattoos.html"></a>
-                <a href="HistoryTools.html"></a>
-                <a href="HistoryTribes.html"></a>
-                <a href="HistoryModern.html"></a>
-                <a href="HistoryMilitaryWiccanReligion.html"></a>
-                <a href="HistoryReferenceList.html"></a>
-            </ul>
-            <a href="Tattoo%20News.html">Tattoo News</a>
-            <a href="Merchandise.html">Merchandise</a>
-            <a href="Book%20an%20Appointment.html">Book an Appointment</a>
-        </div>
+        <ul class="navigation">
+            <li><a href="Homepage.html">Homepage</a></li>
+            <li class="dropdown-nav">
+                <a class=" dropbtn" href="/html/Portfolio.html" >Portfolio</a>
+                <div class="dropdown-content">
+                    <a href="/html/Biography.html">Biography</a>
+                    <a href="/html/TattooWork.html">Tattoo Work</a>
+                    <a href="/html/Wannado's.html">Wannado's</a>
+                </div>
+            </li>
+            <li class="dropdown-nav">
+                <a class="active dropbtn" href="/html/History%20of%20Tattoos.html">History of Tattoos</a>
+                <div class="dropdown-content">
+                    <a class="active" href="/html/HistoryAncientTattoos.html">Ancient Tattoos</a>
+                    <a href="/html/HistoryTools.html">Tools</a>
+                    <a href="/html/HistoryTribes.html">Tribes</a>
+                    <a href="/html/HistoryModern.html">Modern</a>
+                    <a href="/html/HistoryMilitaryWiccanReligion.html">Military/Wiccan/Religion</a>
+                    <a href="/html/HistoryReferenceList.html">Reference List</a>
+                </div>
+            </li>
+            <li><a href="/html/Tattoo%20News.html">Tattoo News</a></li>
+            <li><a href="/html/Merchandise.html">Merchandise</a></li>
+            <li><a href="/html/Book%20an%20Appointment.html">Book an Appointment</a></li>
+            <li class="translate">
+                <div id="google_translate_element"></div>
+            </li>
+            <li class="theme-switch">
+                <label class="switch">
+                  <input type="checkbox" id="theme-toggle">
+                  <span class="slider round"></span>
+                </label>
+                <p id="tdt">Toogle <br>Dark Theme</p>
+            </li>
+
+        </ul>
         <a id="top"></a>
 
         <div class="background">
@@ -166,7 +195,7 @@
 
                 <div class="container">
 
-                    <img src="HTML-pictures.html/Skinpiece.jpg" alt="curled up mummy laying on the back" class="Image">
+                    <img src="/images/HTML-pictures.html/Skinpiece.jpg" alt="curled up mummy laying on the back" class="Image">
                     <div class="overlay"> Ötzi 3370 - 3100 BC</div>
                 </div>
                 <h2>Ötzi the Iceman </h2>
@@ -174,7 +203,7 @@
                 <p>This ancient mummy preserved by the freezing temperature was discovered in 1991 in the Tyrolean Alps and has the oldest example of tattoos ever found. <br> 
                     On his body scientists counted up to 61 different tattoos, mostly geometric figures like dots, small circles and lines, which also have been found on clay figurines and other art from the same period (3370 – 3100 cal BC).</p>
 
-                <img src="HTML-pictures.html/pazyryktattoo.jpg" alt="piece of Pazyryks chieftain tattoos" style = "float: right">
+                <img src="/images/HTML-pictures.html/pazyryktattoo.jpg" alt="piece of Pazyryks chieftain tattoos" style = "float: right">
 
                 <p>The tattoos are placed on strategic acupuncture points and it is believed they were placed for medical purpose. </p>
                 <p>[1,3,4,5,6,7,17]</p>
@@ -194,11 +223,11 @@
 
                 <div class="row">
                     <div class="column">
-                        <img src="HTML-pictures.html/malemummyhorned.jpg" alt="The Gebelein man" style="width:100%">
+                        <img src="/images/HTML-pictures.html/malemummyhorned.jpg" alt="The Gebelein man" style="width:100%">
                         <div class="textBottomRight"> <em>Gebelein Man</em></div>
                     </div>
                     <div class="column">
-                        <img src="HTML-pictures.html/s-shapes2.jpg" alt="Gebeline woman" style="width:100%">
+                        <img src="/images/HTML-pictures.html/s-shapes2.jpg" alt="Gebeline woman" style="width:100%">
                         <div class="textBottomRight"> <em>Gebelein Woman</em></div>
                     </div>
                 </div>
@@ -218,10 +247,10 @@
 
 
                     <p>Some of the most popular motives both then and now are the Kanji signs (Japanese writing that originally came from China) and of course the dragon.</p>
-                    <img class="center" src="HTML-pictures.html/ChineseDragon.png" alt="chinese dragon" style="opacity: 0.3" height="130">
+                    <img class="center" src="/images/HTML-pictures.html/ChineseDragon.png" alt="chinese dragon" style="opacity: 0.3" height="130">
 
-                    <img id="necktattoo" src="HTML-pictures.html/asiansymbolsneck.jpg" alt="necktattoo Kanji signs">
-
+                    <img id="necktattoo" src="/images/HTML-pictures.html/asiansymbolsneck.jpg" alt="necktattoo Kanji signs">
+                    
                     <p> In both countries the dragon symbolise power, benevolence, intelligence, wisdom, bravery and is a bearer of good luck and fortune. 
                         Some of the Chinese dragons are the earth dragon and heaven dragon who both takes care of each element. The horned dragon that symbolises strength and the hornless yellow that symbolises wisdom and knowledge.</p>
 
@@ -233,35 +262,41 @@
                 </div>
 
                 <h2>Greece </h2>
-
-
+                
+                
 
                 <p>The Greeks were heavily influenced by the Persians who used the tattoo to penalize slaves, criminals, and prisoner of war. Several of these wars were against Greece, 480 BC King Xerxes invaded Greece which they emerged victorious. Some of the prisoners of war got executed and the rest was tattooed with the royal marks. </p>
 
                 <p>For the ancient Greeks, tattoo became a mark of pain and disgrace. There are sources stating that the Greeks might have practiced the tattooing of slaves in their own culture as well. If this was influenced or not by the Persian was not stated. But the distaste of tattoos was clear and evidence of tattoo removal remedies have been found.</p>
 
                 <p>Although the tattoo symbolised disgrace the Greeks where aware that not all cultures where of the same view, and that in some cultures a tattoo was a sign of wealth and status. The artists and scholars were intrigued by this fact and often used tattoos in their tales and artwork, one such culture was the Thracian people. </p>
-                <img src="HTML-pictures.html/greece.jpg" alt="vase with picture of man with tattooed arms" style="border-radius: 60px; float: right">
+<img src="/images/HTML-pictures.html/greece.jpg" alt="vase with picture of man with tattooed arms" style="border-radius: 60px; float: right">
                 <p>The Thracian people was a mercenary people mostly located in the Balkans. Completely unlike the Greeks the sign of having many and well-designed tattoos was a sign of nobility and high status while having none showed of low status.</p>
-
+                
 
                 <p>The religious marks and ornamental decorations worn by free Thracian women was one source of inspiration for the artists, as were the slaves and travellers showing different tattoo styles. The painter Pistoxenos painted one of the earliest deer tattoos on a woman’s right arm, the name was translated to “reliable foreigner”. By absorbing foreign tattoo culture Greeks began to see the tattoo as something different than a penalty mark.</p>
 
                 <p>And the more frequent attempts to understand foreign uses of tattoos, exposure to different cultures and the Thracian tattoos presented in literature and art slowly changed the feel of disgrace and barbarity to fascination and eventually acceptance.</p>
                 <p>[5,6,8,17]</p>
-                <a href="HistoryReferenceList.html">References</a>
+                <a href="/html/HistoryReferenceList.html">References</a>
             </div>
 
             <div id="uparrow">
                 <a href="#top">
-                    <img src="HTML-pictures.html/arrow.png">
+                    <img src="/images/HTML-pictures.html/arrow.png">
                 </a>
             </div>
 
             <div class="footer">
-                <p>Created by the <a href="4StoogesTeam.html">4 Stooges Team</a>, 2020.</p>
+                <p>Created by the <a href="/html/4StoogesTeam.html">4 Stooges Team</a>, 2020.</p>
             </div>
         </div>
+                
+        <script type="text/javascript" src="/other/General%20Scripts.js"></script>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 
 </html>
