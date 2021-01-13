@@ -1,14 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link id="theme" rel="stylesheet" type="text/css" href="/other/General%20Theme.css" />
-        <style></style>
+        <style>
+            div.gallery {
+                border: 1px solid #ccc;
+                height: 300px;
+                margin: 10px;
+                background-image: radial-gradient(rgba(169,169,169,0.8), rgba(169,169,169,0.8), rgba(0,0,0,0.8));
+            }
+
+            div.gallery:hover {
+                border: 1px solid #777;
+                box-shadow: 5px 10px 15px darkgreen;
+            }
+
+            div.gallery img {
+                width: 100%;
+                height: 200px;
+            }
+
+            div.desc {
+                padding: 15px;
+                text-align: center;
+                
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            .responsive {
+                padding: 0 6px;
+                float: left;
+                width: 24.99999%;
+                
+            }
+
+            @media only screen and (max-width: 700px) {
+                .responsive {
+                    width: 49.99999%;
+                    margin: 6px 0;
+                }
+            }
+
+            @media only screen and (max-width: 500px) {
+                .responsive {
+                    width: 100%;
+                }
+            }
+
+            .clearfix:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        </style>
     </head>
-    
+
     <body>
         <ul class="navigation">
             <li><a  href="Homepage.html">Homepage</a></li>
@@ -39,23 +92,102 @@
             </li>
             <li class="theme-switch">
                 <label class="switch">
-                  <input type="checkbox" id="theme-toggle">
-                  <span class="slider round"></span>
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider round"></span>
                 </label>
                 <p id="tdt">Toogle <br>Dark Theme</p>
             </li>
 
         </ul>
+        
+        <div class="container">
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="/images/Merchandise/HoodieBlack.jpg">
+                        <img src="/images/Merchandise/HoodieBlack.jpg" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <div class="desc">Custom Black Hoodie with the Artist's Logo<br><a href=/html/Book%20an%20Appointment.html>Contact the Artist to order!</a></div>
+                </div>
+            </div>
+
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="/images/Merchandise/HoodieRed.jpg">
+                        <img src="/images/Merchandise/HoodieRed.jpg" alt="Forest" width="600" height="400">
+                    </a>
+                    <div class="desc">Custom Red Hoodie with the Artist's Logo<br><a href=/html/Book%20an%20Appointment.html>Contact the Artist to order!</a></div>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="/images/Merchandise/HoodieWhite.jpg">
+                        <img src="/images/Merchandise/HoodieWhite.jpg" alt="Northern Lights" width="600" height="400">
+                    </a>
+                    <div class="desc">Custom White Hoodie with the Artist's Logo<br><a href=/html/Book%20an%20Appointment.html>Contact the Artist to order!</a></div>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="/images/Merchandise/CreamTattoo.jpg">
+                        <img src="/images/Merchandise/CreamTattoo.jpg" alt="Mountains" width="600" height="400">
+                    </a>
+                    <div class="desc">Skin cream for application after the tattoo session<br><a href=/html/Book%20an%20Appointment.html>Contact the Artist to order!</a></div>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="/images/Merchandise/TshirtBlack.jpg">
+                        <img src="/images/Merchandise/TshirtBlack.jpg" alt="Cinque Terre" width="600" height="400">
+                    </a>
+                    <div class="desc">Custom Black T-Shirt with the Artist's Logo<br><a href=/html/Book%20an%20Appointment.html>Contact the Artist to order!</a></div>
+                </div>
+            </div>
+
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="/images/Merchandise/TshirtRed.jpg">
+                        <img src="/images/Merchandise/TshirtRed.jpg" alt="Forest" width="600" height="400">
+                    </a>
+                    <div class="desc">Custom Red T-Shirt with the Artist's Logo<br><a href=/html/Book%20an%20Appointment.html>Contact the Artist to order!</a></div>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="/images/Merchandise/TshirtWhite.jpg">
+                        <img src="/images/Merchandise/TshirtWhite.jpg" alt="Northern Lights" width="600" height="400">
+                    </a>
+                    <div class="desc">Custom White T-Shirt with the Artist's Logo<br><a href=/html/Book%20an%20Appointment.html>Contact the Artist to order!</a></div>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="/images/Merchandise/StickerTattoo.jpg">
+                        <img src="/images/Merchandise/StickerTattoo.jpg" alt="Mountains" width="600" height="400">
+                    </a>
+                    <div class="desc">Custom Stickers with the Artist's Logo<br><a href=/html/Book%20an%20Appointment.html>Contact the Artist to order!</a></div>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+
 
         <div class="footer">
             <p>Created by the <a href="/html/4StoogesTeam.html">4 Stooges Team</a>, 2020.</p>
         </div>
-        
+
         <script type="text/javascript" src="/other/General%20Scripts.js"></script>
         <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
-    
+
 </html>

@@ -21,8 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
     else {
         document.getElementById('theme-toggle').checked = false;
     }
-    
-
 })
 
 function googleTranslateElementInit() {

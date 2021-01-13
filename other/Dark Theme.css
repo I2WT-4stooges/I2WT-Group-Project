@@ -71,6 +71,7 @@ li.theme-switch{
     float: right;
     margin: 0px 0px 0px 0px;
 }
+
 #tdt {
     float: left;
     padding: 0px 10px 0px 10px;
@@ -166,4 +167,35 @@ li.translate {
     border: 0px;
     padding: 0px;
     margin: 0px;
+}
+
+#bio-cont{
+    position:absolute;
+    top: 20%;
+    left: 20%;
+}
+
+#bio-head{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+#bio-head span{
+    background-color: rgba(169,169,169,0.8);
+    padding: 5px;
+    text-decoration: underline;
+    box-shadow: 5px 10px 15px darkgreen;
+}
+
+#bio-img{
+    box-shadow: 5px 10px 15px darkgreen;
+}
+
+#bio-txt{
+    background-image: radial-gradient(rgba(100,100,100,0.8), rgba(150,150,150,0.8), rgba(0,0,0,0.8));
+    color: white;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 5px 10px 15px darkgreen;
 }
