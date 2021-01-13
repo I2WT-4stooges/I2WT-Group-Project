@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link id="theme" rel="stylesheet" type="text/css" href="/other/General%20Theme.css" />
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+            }
+
+            /* Style the header */
+            .header {
+                background-color: #f1f1f1;
+                padding: 5px;
+                text-align: center;
+            }
+
+            /* Style the top navigation bar */
+            .topnav {
+                overflow: hidden;
+                background-color: #333;
+            }
+
+            /* Style the topnav links */
+            .topnav a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            /* Change color on hover */
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            /* Create three unequal columns that floats next to each other */
+            .column {
+                float: left;
+                padding: 10px;
+            }
+
+            /* Left and right column */
+            .column.side {
+                width: 25%;
+            }
+
+            /* Middle column */
+            .column.middle {
+                width: 50%;
+            }
+
+
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+                .column.side, .column.middle {
+                    width: 100%;
+                }
+            }
+
+            ul.nav-pills {
+                position: fixed;
+                background-image: radial-gradient(rgba(150,150,150,0.8), rgba(169,169,169,0.8), rgba(0,0,0,0.8));
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                box-shadow: 5px 10px 15px darkgreen;
+
+            }
+
+            .middle {
+                
+
+            }
+            .cont {
+                width: 70%;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                background-image: radial-gradient(rgba(150,150,150,0.8), rgba(169,169,169,0.8), rgba(100,100,100,0.8));
+                box-shadow: 5px 10px 15px darkgreen;
+            }
+
+            .accordion {
+                background-color: #eee;
+                color: #444;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+                transition: 0.4s;
+            }
+
+            .active, .accordion:hover {
+                background-color: #ccc;
+            }
+
+            .accordion:after {
+                content: '\002B';
+                color: #777;
+                font-weight: bold;
+                float: right;
+                margin-left: 5px;
+            }
+
+            .active:after {
+                content: "\2212";
+            }
+
+            .panel {
+                padding: 0 18px;
+                background-color: white;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+            }
+        </style>
+    </head>
+
+    <body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+
+        <div container>
+            <div class="header">
+                <h1 id="top">Papageorgiou Athanasios</h1>
+                <p>Welcome to my personal webpage! <br>Feel free to browse it and read all about my personal details such as interests and hobbies!
+                </p>
+            </div>
+
+            <div class="topnav">
+                <a href="/html/Homepage.html">Back to the main webpage</a>
+                <a href="/html/4StoogesTeam.html">Back to 4 Stooges Team</a>
+                <li class="theme-switch" style="list-style-type: none;">
+                    <label class="switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                </li>
+            </div>
+
+            <div class="row">
+                <div class="column side">
+                    <nav class="col-sm-3 col-4" id="myScrollspy">
+                        <ul class="nav nav-pills flex-column">
+                            <li class="nav-item">
+                                <h2>Jump to:</h2>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#top">Top</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#introduction">Introduction</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#abroad">Studies Abroad</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#army">Army</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#now">Present Day</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#hobbies">Interests and Hobbies</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#personalSkills">Personal Skills</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="column middle">
+                    <div class="cont">
+                        <h2 id="introduction">Introduction</h2>
+                        <hr>
+                        <p>Hello everyone, my name is Papageorgiou Athanasios.<br>I was born in 5th of May, 1995 in the city of Thessaloniki but I lived all my years up until 18 in the small town of Naoussa. I also have brother, 4 years younger than me, with whom we get along very well and I love him more than anyone else</p>
+                        <h2 id="abroad">Studies Abroad</h2>
+                        <hr>
+                        <p>After I finished school, I moved to Sofia, Bulgaria to start my academic career. I studied Engineering, with specialising in civil structures. My experiences there were very pleasant and I have made some of my greatest friends there that I still have contacts with most of them. The tattoo artist that supported the group project was one of them and he is still one of my best friends. I was the first person that he tattooed on so this sealed our friendship and mutual respect</p>
+                        <h2 id="army">Army</h2>
+                        <hr>
+                        <p>At age of 23 I returned from Bulgaria and it was time for me to complete my military service. I served in the Hellenic Army Aviation for 9 months and it was a great experience. I have met great people there and I still keep contact with them. An interesting fact is that during the first month of my service was the training phase, where every solder that was enlisted on the same period gets trained mainly around:
+                        <ul style="text-align: left">
+                            <li>Army Discipline</li>
+                            <li>Officer Ranks</li>
+                            <li>Combat Tactics</li>
+                            <li>Weapon Handling</li>
+                            <li>Body Training and Physique</li>
+                            <li>Emergency First Aid</li>
+                        </ul>
+                        <p>At first I was worried that i was going to struggle with that but I tried my best. Thankfully it payed off with a very good outcome, and I even managed to finish in the <strong>TOP 3</strong> out of fellow 80 soldiers. For this achievement I was awarded, along with the other 2 soldiers, a special honour patch that was issued to me in a special ceremony by a Brigadier General. This boosted my self-esteemed and made me understand that I can achieve great things if I try hard enough!</p>
+                        <h2 id="now">Present Day</h2>
+                        <hr>
+                        <p>After I finished with my army obligations I decided to pursue my lifelong passion: Computer Science! Since a young age I was fascinated about the computers and all the science that goes around them. I liked the idea of making an electronic machine do whatever you tell it to do (given that you tell it in a language that it undertands). So for now my goal is to finish college and making the best out of it, by trying my best and aiming for the best results!</p>
+                        <h2 id="hobbies">Interests and Hobbies</h2>
+                        <hr>
+                        <p>I was never an outgoing person, I prefer my personal peace and quiet and try to avoid any conflicts that may disturb me. This has the effect that most of my hobbies are self centered and are usialy activities that done at home, alone or with a small group of trusted friends. Below are some of my favourite interests organised in accordion menus:</p>
+                        <button class="accordion">Favourite Movies</button>
+                        <div class="panel">
+                            <ul style="text-align: left">
+                                <li>Shawshank Redemption</li>
+                                <li>Marvel Cinematic Universe</li>
+                                <li>Inception</li>
+                            </ul>
+                        </div>
+
+                        <button class="accordion">Favourite TV Series</button>
+                        <div class="panel">
+                            <ul style="text-align: left">
+                                <li>Breaking Bad</li>
+                                <li>Game of Thrones</li>
+                                <li>The Office (US Version)</li>
+                            </ul>
+                        </div>
+
+                        <button class="accordion">Favourite Music Singers/Bands</button>
+                        <div class="panel">
+                            <ul style="text-align: left">
+                                <li>DIO</li>
+                                <li>Jimmy Handrix</li>
+                                <li>The Who</li>
+                                <li>Clash</li>
+                                <li>Metallica</li>
+                            </ul>
+                        </div>
+
+                        <button class="accordion">Favourite Food</button>
+                        <div class="panel">
+                            <ul style="text-align: left">
+                                <li>Gyros</li>
+                                <li>Pizza</li>
+                                <li>Burger</li>
+                            </ul>
+                        </div>
+
+                        <button class="accordion">Favourite VideoGames</button>
+                        <div class="panel">
+                            <ul style="text-align: left">
+                                <li>GTA: San Andreas</li>
+                                <li>Civilisation VI</li>
+                                <li>Minecraft</li>
+                            </ul>
+                        </div>
+                        <h2 id="personalSkills">Personal skills</h2>
+                        <hr>
+                        <p>Over the years I have gathered plenty of knowledge and skills through practice and extended research. Some of them are, but not limited to:</p>
+                        <ul style="text-align: left">
+                            <li>C1 Level of English Language Proficiency</li>
+                            <li>B2 Level of German Language Proficiency</li>
+                            <li>Can read, understand and speak basic Bulgarian</li>
+                            <li>Proficient in the whole Microsoft Office Suit (Word, Excel, PowerPoint and also Access)</li>
+                            <li>Trained on both 7.62×51mm (G3A3, G3A4) and 5.56×45mm (M16A2, M16M4) Rifles </li>
+                            <li>Have a Driving Licence</li>
+                            <li>Can hold my breath for 2 minutes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="column side">
+                    <img src="/images/Team/Nasos.png">
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <script type="text/javascript" src="/other/General%20Scripts.js"></script>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    } 
+                });
+            }
+        </script>
+    </body>
+
+</html>

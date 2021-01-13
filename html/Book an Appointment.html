@@ -1,14 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link id="theme" rel="stylesheet" type="text/css" href="/other/General%20Theme.css" />
-        <style></style>
+        <style>
+            /* Create three unequal columns that floats next to each other */
+            .column {
+                float: left;
+                padding: 10px;
+            }
+
+            /* Left and right column */
+            .column.side {
+                width: 25%;
+            }
+
+            /* Middle column */
+            .column.middle {
+                width: 70%;
+                margin: 20px;
+                background-image: radial-gradient(rgba(100,100,100,0.8), rgba(150,150,150,0.8), rgba(0,0,0,0.8));
+            }
+
+
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+                .column.side, .column.middle {
+                    width: 100%;
+                }
+            }
+            .teo{
+                width: 100%;
+                /*height: 600px;*/
+                /*                object-fit: scale-down;*/
+                object-fit: contain;
+
+            }
+
+            .row{
+                margin: 20px;
+                margin-top: 50px;
+
+            }
+            img {
+                margin: 10px;
+
+            }
+            .info{
+
+                padding: 4px;
+                text-align: center;
+            }
+
+            .fa {
+                padding: 20px;
+                font-size: 30px;
+                width: 70px;
+                text-align: center;
+                text-decoration: none;
+                margin: 5px 2px;
+                border-radius: 50%;
+            }
+
+            .fa:hover {
+                opacity: 0.7;
+            }
+
+            .fa-facebook {
+                background: #3B5998;
+                color: white;
+            }
+
+            .fa-instagram {
+                background: #e95950;
+                color: white;
+            }
+            
+            table {
+                margin-left: auto;
+                margin-right: auto;
+            }
+           
+        </style>
     </head>
-    
+
     <body>
         <ul class="navigation">
             <li><a href="Homepage.html">Homepage</a></li>
@@ -39,23 +125,69 @@
             </li>
             <li class="theme-switch">
                 <label class="switch">
-                  <input type="checkbox" id="theme-toggle">
-                  <span class="slider round"></span>
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider round"></span>
                 </label>
                 <p id="tdt">Toogle <br>Dark Theme</p>
             </li>
 
         </ul>
 
+        <div class="row">
+            <div class="column side">
+                <img src="/images/Utility/Homepage.jpg" class="teo">
+                <img src="/images/Utility/Unused.jpg" class="teo" style="transform: scaleX(-1); ">
+            </div>
+
+            <div class="column middle">
+                <div class="info"><h1>Contact Information</h1>
+                    <p>If you wish to Book an Appointment or you have any question, feel free to message me on my socials</p><hr>
+                </div>
+                <table style="width:20%">
+                    <tr>
+                        
+                        <th>Social Links</th>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td><a href="https://www.facebook.com/teothomai/" class="fa fa-facebook"></a></td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td><a href="https://www.instagram.com/thodoris_thomai/" class="fa fa-instagram"></a></td>
+                        
+                    </tr>
+                </table>
+
+
+            </div>
+
+            <div class="column side">
+<!--                <div id="googleMap" style="width:70%;height:400px;"></div>-->
+                
+            </div>
+        </div>
         <div class="footer">
             <p>Created by the <a href="/html/4StoogesTeam.html">4 Stooges Team</a>, 2020.</p>
         </div>
-        
+
         <script type="text/javascript" src="/other/General%20Scripts.js"></script>
         <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    </body>
-    
+        <!--<script>
+            function myMap() {
+                var mapProp= {
+                    center:new google.maps.LatLng(51.508742,-0.120850),
+                    zoom:5,
+                };
+                var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ07LeEci4uAVhEYzqRAxdUCnD-Eb9VKw&callback=myMap"></script>
+    </body>-->
+
 </html>

@@ -172,7 +172,7 @@ li.translate {
 #bio-cont{
     position:absolute;
     top: 20%;
-    left: 10%;
+    left: 20%;
 }
 
 #bio-head{
@@ -193,8 +193,8 @@ li.translate {
 }
 
 #bio-txt{
-    background-color: rgba(169,169,169,0.8);
+    background-image: radial-gradient(rgba(169,169,169,0.8), rgba(169,169,169,0.8), rgba(0,0,0,0.8));
     margin: 10px;
-    padding: 10px;
+    padding: 15px;
     box-shadow: 5px 10px 15px darkgreen;
 }
